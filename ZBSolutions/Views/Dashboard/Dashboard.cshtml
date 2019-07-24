@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Dashboard</h2>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Zigma Banking Solutions</h1>
+        <p>"We treat your money like it's your money"</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">Fund Transfer</div>
+                <div class="panel-body"><img src="~/Images/fundtransfer.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">Transfer your fund</div>
+                <div style="">
+                    @*@Html.ActionLink("My Account", "MyAccountAction", "Dashboard")*@
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-danger">
+                <div class="panel-heading">Beneficiary List</div>
+                <div class="panel-body"><img src="~/Images/beneficiary.jpg" class="img-responsive" style="width:57%" alt="Image"></div>
+                <div class="panel-footer">Details</div>
+                @Html.ActionLink("Beneficiary Details", "BenAction", "Dashboard")
+               
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">My Account</div>
+                <div class="panel-body"><img src="~/Images/myaccount.jpg" class="img-responsive" style="width:57%" alt="Image"></div>
+                <div class="panel-footer">Users Account Info</div>
+                @Html.ActionLink("My Account", "MyAccountAction", "Dashboard")
+
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Balance Info</div>
+                <div class="panel-body"><img src="~/Images/balanceinfo.png" class="img-responsive" style="width:57%" alt="Image"></div>
+                <div class="panel-footer">View your Passbook</div>
+                @*@Html.ActionLink("My Account", "MyAccountAction", "Dashboard")*@
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Login Details</div>
+                <div class="panel-body"><img src="~/Images/Login.png" class="img-responsive" style="width:58%" alt="Image"></div>
+                <div class="panel-footer">View your Login Details</div>
+                @*@Html.ActionLink("My Account", "MyAccountAction", "Dashboard")*@
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Offers</div>
+                <div class="panel-body"><img src="~/Images/special-offer.jpg" class="img-responsive" style="width:110%" alt="Image"></div>
+                <div class="panel-footer">View exciting Offers</div>
+                @*@Html.ActionLink("My Account", "MyAccountAction", "Dashboard")*@
+            </div>
+        </div>
+    </div>
+</div><br><br>

@@ -1,0 +1,43 @@
+﻿@model ZBSolutions.Models.AccountModel
+
+@{
+    ViewBag.Title = "MyAccountAction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MyAccountAction</h2>
+
+<div>
+    <h4>AccountModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IfscCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IfscCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back", "Dashboard", new { /* id = Model.PrimaryKey */ }) |
+   
+</p>

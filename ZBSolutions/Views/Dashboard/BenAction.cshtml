@@ -1,0 +1,45 @@
+﻿@model ZBSolutions.Models.BeneficiaryModel
+
+@{
+    ViewBag.Title = "BenAction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BenAction</h2>
+
+<div>
+    <h4>BeneficiaryModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nickname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nickname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeneficiaryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeneficiaryId)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Add Beneficiary", "AddBen", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back", "Dashboard")
+</p>
